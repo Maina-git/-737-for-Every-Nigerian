@@ -1,0 +1,52 @@
+@import "./Mixins.scss";
+@import "./Variables.scss";
+
+.balance{
+    @include respond(tab-port){
+    @include column;
+    @include finite;
+    background:$BrownTheme;
+    overflow-y:scroll;
+p{
+    background-color:$White;
+    padding:10px;
+    border-radius:20px;
+    font-size:10px;
+    color:$Themecolor;
+    font-family:sans-serif;
+    text-align:center;
+}
+
+img{
+    margin:20px;
+    width:200px;
+    border-radius:100%;
+}
+span{
+    color:$Themecolor;
+    background:$White;
+    padding:10px 30px;
+    border-radius:10px;
+    font-weight:bold;
+    margin:20px;
+
+}
+h2{
+    color:$White;
+    font-family:sans-serif;
+    font-size:10px;
+}
+.icon{
+    color:$White;
+    font-size:50px;
+}
+.space{
+    height:10vh;
+}
+button{
+    @include button;
+    color:$Themecolor;
+    font-size:15px;
+}
+}
+}

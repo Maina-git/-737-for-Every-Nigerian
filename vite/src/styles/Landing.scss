@@ -1,0 +1,49 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+.landing{
+    @include respond(tab-port){
+    @include column;
+    @include display;
+    background:$White;
+
+    h2{
+        color:$Themecolor;
+        font-family:sans-serif;
+    }
+  p{
+    color:$Themecolor;
+    font-family:sans-serif;
+    font-size:10px;
+  }
+    .oval{
+        background:$Themecolor;
+        padding:30px 50px;
+        color:$White;
+        @include column;
+        border-radius:10px 80px 40px 80px;
+h1{
+    font-size:50px;
+    font-family:sans-serif;
+}
+p{
+    font-family:sans-serif;
+    font-size:10px;
+    color:$White;
+}
+    }
+button{
+    @include button;
+    background:$Themecolor;
+    color:$White;
+    cursor:pointer;
+}
+.wallet{
+    @include button;
+    background:none;
+    border:1px solid $Themecolor;
+    color:$Themecolor;
+}
+}
+}
+
+

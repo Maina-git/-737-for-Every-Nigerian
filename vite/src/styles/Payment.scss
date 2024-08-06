@@ -1,0 +1,95 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.payment{
+    @include respond(tab-port){
+    @include finite;
+    @include column;
+    background:$BlueTheme;
+    overflow-y: scroll;
+    img{
+        width:200px;
+        margin:20px;
+        border-radius:100%;
+    }
+    p{
+        color:$White;
+        font-size:15px;
+        font-family:sans-serif;
+    }
+    .action{
+        @include column;
+        input{
+            background:none;
+            padding:10px 30px;
+            border:1px solid $White;
+            border-radius:30px;
+            color:$White;
+            outline:none;
+        }
+        button{
+            @include  button;
+            color:$Themecolor;
+        }
+  }
+  .billList{
+width:100%;
+@include list;
+height:40vh;
+background:$White;
+
+h1{
+    color:$Themecolor;
+    font-size:20px;
+    margin:20px 0;
+    font-family:sans-serif;
+}
+li{
+    width:55vh;
+    height:10vh;
+    border-radius:30px;
+    background:#d3d3d3;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:10px 0;
+
+h3{
+    font-size:10px;
+    font-family:sans-serif;
+    color:$Themecolor;
+}
+button{
+    padding:5px 10px;
+    font-size:8px;
+    border:0;
+    border-radius:10px;
+    color:$Themecolor;
+    cursor:pointer;
+}
+}
+}
+span{
+background:$White;
+color:$Themecolor;
+padding:10px 30px;
+font-size:10px;
+font-family:sans-serif;
+}
+button{
+    @include button;
+    font-size:10px;
+    color:$Themecolor;
+}
+
+.space{
+    height:10vh;
+    width:100%;
+}
+  }
+
+}    
+
+
+
+

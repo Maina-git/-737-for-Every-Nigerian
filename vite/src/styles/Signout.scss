@@ -1,0 +1,42 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.Signout{
+    
+    @include respond(tab-port){
+    @include column;
+    @include display;
+    background:$White;
+
+
+    .bank{
+        padding:30px 50px;
+        background:$Themecolor;
+
+    .logo{
+        width:30px;
+        height:30px;
+        margin:10px;
+        background:$White;
+    }
+
+
+        h1{
+            color:$White;
+            font-family:sans-serif;
+        }
+
+    }
+    p{
+        color:$Themecolor;
+        font-family:sans-serif;
+        font-size:10px;
+    }
+    button{
+        @include button;
+        color:$White;
+        background:$Themecolor;
+        font-size:10px;
+    }
+}
+}

@@ -1,0 +1,81 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.home{
+    @include respond(tab-port){
+    @include column;
+    @include display;
+    overflow-y: scroll;
+    background:$PinkTheme;
+.signout{
+    padding:5px 20px;
+    background:$White;
+    font-size:12px;
+    color:$Themecolor;
+    position:absolute;
+    top:20px;
+    right:30px;
+    border-radius:10px;
+}
+.hide{
+    display:none;
+}
+
+    .icon{
+        position:absolute;
+        right:10px;
+        top:20px;
+        color:$White;
+        font-size:20px;
+        cursor:pointer;
+    }
+
+   .reveal{
+    @include column;
+    position:absolute;
+    top:30px;
+    margin: 5px 50px;
+
+    h1{
+        color:$White;
+        font-family:sans-serif;
+        padding:10px;
+        border:1px solid $White;
+        border-radius:20px;
+        font-size:20px;
+    }
+    p{
+        text-align:center;
+        color:white;
+        font-family:sans-serif;
+        font-size:12px;
+    }
+   } 
+
+.service{
+    @include column;
+    img{
+        width:100px;
+        height:100px;
+        border-radius:100%;
+    }
+    h1{
+        color:$White;
+        font-family:sans-serif;
+        font-size:20px;
+        transition-duration: 2s;
+    }
+
+    p{
+        color:$White;
+        font-size:50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding:10px 20px;
+        background:$White;
+        color:$PinkTheme;
+        border-radius:20px 10px 50px 5px;
+        font-weight:bold;
+    }
+  }
+}
+}

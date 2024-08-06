@@ -1,0 +1,30 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.open{
+    @include respond(tab-port){
+    @include column;
+    @include display;
+    background:$Themecolor;
+h1{
+    color:$White;
+    font-size:100px;
+    font-family:sans-serif;
+}
+p{
+    color:$White;
+    font-family:sans-serif;
+    font-size:10px;
+}
+button{
+    @include button;
+    color:$Themecolor;
+    cursor:pointer;
+    font-size:10px;
+}
+
+
+}
+
+}
+

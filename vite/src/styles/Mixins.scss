@@ -1,0 +1,65 @@
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media screen and (max-width: 37.5em){
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media screen and (max-width: 56.25em){
+         @content;
+        }
+    }
+@if  $breakpoint == tab-land {
+    @media screen and (max-width: 100em){
+        display:none;
+    }
+}
+}
+
+@mixin button{
+    padding:10px 30px;
+    border:0;
+    outline:none;
+    border-radius:30px;
+}
+@mixin column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    place-items:center;
+}
+@mixin display{
+    width:100vw;
+    height:100vh;
+}
+@mixin page{
+    width:100vw;
+    height:90vh;
+}
+@mixin flex{
+flex:100%;
+display:flex;
+gap:35px;
+display:flex;
+justify-content:center;
+place-items:center;
+align-items:center;
+}
+@mixin list{
+    display:flex;
+    flex-direction:column;
+    place-items:center;
+    gap:5px;
+
+}
+
+@mixin finite{
+    max-height:max-content;
+    width:100vw;
+}
+
+
+
+

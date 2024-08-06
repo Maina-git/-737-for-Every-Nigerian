@@ -1,0 +1,103 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+
+.transfer{
+    @include respond(tab-port){
+    @include column;
+    @include display;
+    background:$Themecolor;
+overflow-y:scroll;
+
+.nav{
+    width:100%;
+    background:none;
+    padding:20px 0;
+    position:absolute;
+    top:10px;
+    @include flex;
+    .icon{
+        font-size:30px;
+        color:$White;
+    }
+}
+.exchange{
+    @include column;
+    ul li{
+    list-style:none;
+    @include  flex;
+    height:10vh;
+    width:90vw;
+    margin:10px;
+    border:1px solid $White;
+    border-radius:20px;
+    justify-content:space-between;
+.left{
+    width:50px;
+    height:50pxx;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    place-items:center;
+    text-align:center;
+    background:white;
+    margin:0 20px;
+    padding:5px;
+    border-radius:10px;
+    .icon{
+        color:$Themecolor;
+    }
+    p{
+        color:$Themecolor;
+        font-size:10px;
+    }
+}
+.right{
+    height:30px;
+    width:50px;
+    overflow-x: scroll;
+    scrollbar-width:none;
+    background:$White;
+    margin:0 20px;
+    font-size:10px;
+    place-items:center;
+    justify-content:center;
+    color:$Themecolor;
+    display:flex;
+}    
+.center{
+    padding:auto;
+    margin:auto;
+    button{
+        padding:5px 10px;
+        border:0;
+        outline:none;
+        border-radius:10px;
+        color:$Themecolor;
+        font-size:10px;
+    }
+}
+
+}
+    
+}
+
+
+button{
+    @include button;
+    font-size:10px;
+    color:$Themecolor;
+}
+h4{
+    color:$White;
+    font-family:sans-serif;
+}
+span{
+    padding:10px 30px;
+    background:white;
+    color:$Themecolor;
+    font-family:sans-serif;
+    border-radius:10px;
+}
+
+}
+}
